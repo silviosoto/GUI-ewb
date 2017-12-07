@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Parques</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="Libs/materialize/css/materialize.min.css">
+        <link rel="stylesheet" href="css/Estilos.css">
+    </head>
+    <body>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="index.jsp" class="brand-logo ">Parques</a>
+                </ul>
+            </div>
+        </nav>
+        <div class="contenedor">
+            <div class="row">
+                <form class="col s12" WWWaction="asda" method="get" id="Validar-Editar-Usuario" name="Validar-Editar-Usuario">
+                  <div class="row">
+                      <div class="input-field col s12 ">
+                          <img src="Imagenes/perfil.jpg" alt="" class="img-editar ">
+                          <div class="file-field input-field">
+                            <div class="btn">
+                              <span>Subir foto</span>
+                              <input type="file">
+                            </div>
+                            <div class="file-path-wrapper">
+                              <input class="file-path validate" type="text">
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="Nombre" name="Nombre" type="text"  >
+                            <label for="icon_prefix" ></label>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">perm_contact_calendar</i>
+                            <input type="text" name="fecha" class="timepicker" id="fecha">
+                            <label for="fecha" ></label>
+                        </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s6">
+                          <i class="material-icons prefix">perm_identity</i>
+                          <input id="Usuario" name="Usuario" type="text" >
+                          <label for="icon_telephone"></label>
+                      </div>
+                      <br>
+                       <input type="radio" name="sexo" value="H" id="sexoH" class="sexo"/>
+                       <label for="sexoH">Hombre</label>
+                       <input type="radio" name="sexo" value="M" id="sexoM" class="sexo"/>
+                       <label for="sexoM">Mujer</label>
+
+                      </div>
+                     <div class="row">
+                       <div class="center">
+                         <button class="btn waves-effect waves-light" type="submit" name="action">Editar
+                          <i class="material-icons right">send</i>
+                        </button>
+                       </div>
+                     </div>
+                </form>
+            </div>
+            </div>
+        </div>
+        <footer class="page-footer">
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2014 Copyright Text
+                    <a class="grey-text text-lighten-4 right" href="#!">Ayuda</a>
+                </div>
+            </div>
+        </footer>
+        <script src="Libs/materialize/js/jquery-3.2.1.min.js" ></script>
+        <script src="Libs/materialize/js/materialize.min.js" ></script>
+        <script src="Js/jquery.validate.js" ></script>
+        <script src="Js/Validar-form-editar-user.js" ></script>
+        <script src="Js/lenguaje-fecha.js" ></script>
+    </body>
+</html>
